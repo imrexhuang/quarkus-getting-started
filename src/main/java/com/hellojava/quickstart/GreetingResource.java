@@ -4,6 +4,7 @@ import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
+import org.jboss.resteasy.annotations.jaxrs.PathParam;
 
 @Path("/hello")
 public class GreetingResource {
@@ -13,4 +14,12 @@ public class GreetingResource {
     public String hello() {
         return "Hello RESTEasy";
     }
+
+    @GET
+    @Produces(MediaType.TEXT_PLAIN)
+    @Path("/greeting/{name}")
+    public String greeting(@PathParam String name) {
+        return "Hello, " + name;
+    }
+
 }

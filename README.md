@@ -1,20 +1,38 @@
 # 說明
+本範例專案具有hot reload功能
+
 參考 https://atbug.com/hello-quarkus/
 
+筆者開發環境
+Windows 10
+Java 17
+Maven 3.8.4
+
 開發指令(Windows平台)
-
+```shell script
 mvn io.quarkus:quarkus-maven-plugin:2.7.1.Final:create -DprojectGroupId=com.hellojava.quickstart -DprojectArtifactId=quarkus-getting-started -DclassName="com.hellojava.quickstart.GreetingResource" -Dpath="/hello"
+```
 
+```shell script
 cd quarkus-getting-started
+```
 
+```shell script
 mvnw compile quarkus:dev
-
+```
 使用瀏覽器連線到 http://localhost:8080/hello
 
+使用瀏覽器連線到 http://localhost:8080/hello/greeting/AABBCC
+
+單元測試指令
+```shell script
+mvnw test 
+```
 
 打包指令
-
+```shell script
 mvnw package
+```
 
 # quarkus-getting-started Project
 

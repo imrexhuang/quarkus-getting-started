@@ -6,6 +6,8 @@ import org.junit.jupiter.api.Test;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.CoreMatchers.is;
 
+import java.util.UUID;
+
 @QuarkusTest
 public class GreetingResourceTest {
 
@@ -17,5 +19,16 @@ public class GreetingResourceTest {
              .statusCode(200)
              .body(is("Hello RESTEasy"));
     }
+
+    @Test
+    public void testGreetingEndpoint() {
+        final String uuid = UUID.randomUUID().toString();
+        given()
+                .pathParam("name", uuid)
+                .when().get("/hello/greeting/{name}")
+                .then()
+                .statusCode(200)
+                .body(is("Hello, " + uuid));
+    }   
 
 }

@@ -4,9 +4,13 @@
 參考 https://atbug.com/hello-quarkus/
 
 筆者開發環境
+
 Windows 10
+
 Java 17
+
 Maven 3.8.4
+
 
 開發指令(Windows平台)
 ```shell script

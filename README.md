@@ -38,6 +38,14 @@ mvnw test
 mvnw package
 ```
 
+專案加入Spring Web MVC支援
+```shell script
+mvnw quarkus:add-extension -Dextensions="spring-web,resteasy-jackson"
+```
+參考
+
+https://quarkus.io/guides/spring-web
+
 # quarkus-getting-started Project
 
 This project uses Quarkus, the Supersonic Subatomic Java Framework.

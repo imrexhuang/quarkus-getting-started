@@ -1,3 +1,15 @@
+# 說明
+參考 https://atbug.com/hello-quarkus/
+
+開發指令(Windows平台)
+mvn io.quarkus:quarkus-maven-plugin:2.7.1.Final:create -DprojectGroupId=com.hellojava.quickstart -DprojectArtifactId=quarkus-getting-started -DclassName="com.hellojava.quickstart.GreetingResource" -Dpath="/hello"
+cd quarkus-getting-started
+mvnw compile quarkus:dev
+使用瀏覽器連線到 http://localhost:8080/hello
+
+打包指令
+mvnw package
+
 # quarkus-getting-started Project
 
 This project uses Quarkus, the Supersonic Subatomic Java Framework.

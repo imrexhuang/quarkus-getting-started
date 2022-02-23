@@ -1,6 +1,4 @@
 # 說明
-本範例專案具有hot reload功能
-
 參考 https://atbug.com/hello-quarkus/
 
 筆者開發環境
@@ -21,6 +19,7 @@ mvn io.quarkus:quarkus-maven-plugin:2.7.1.Final:create -DprojectGroupId=com.hell
 cd quarkus-getting-started
 ```
 
+開發模式具有live reload(hot reload)功能
 ```shell script
 mvnw compile quarkus:dev
 ```

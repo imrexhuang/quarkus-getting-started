@@ -38,12 +38,18 @@ mvnw package
 ```
 
 專案加入Spring Web MVC支援
+
+參考 https://quarkus.io/guides/spring-web
 ```shell script
 mvnw quarkus:add-extension -Dextensions="spring-web,resteasy-jackson"
 ```
-參考
 
-https://quarkus.io/guides/spring-web
+專案加入Kotlin支援
+
+參考 https://quarkus.io/guides/kotlin
+```shell script
+mvnw quarkus:add-extension -Dextensions="kotlin"
+```
 
 # quarkus-getting-started Project
 
